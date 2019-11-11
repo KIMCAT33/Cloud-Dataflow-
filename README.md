@@ -27,6 +27,6 @@
 
 <code> gzip data/*.txt </code>
 
-<code> bq load --source_formag=CSV -F":" fashion_mnist.train data/train.txt.gz "key:integer, image:string,label:integer"</code>
+<code> bq load --source_format=CSV -F":" fashion_mnist.train data/train.txt.gz "key:integer, image:string,label:integer"</code>
 
-<code> bq load --source_formag=CSV -F":" fashion_mnist.test data/test.txt.gz "key:integer, image:string,label:integer"</code>
+<code> bq load --source_format=CSV -F":" fashion_mnist.test data/test.txt.gz "key:integer, image:string,label:integer"</code>
