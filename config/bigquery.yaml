@@ -1,0 +1,14 @@
+local: &local
+  project: mlproject
+  jwt: key.json
+  dataset: mnist
+  suffix: staging
+
+development:
+  <<: *local
+
+production:
+  project: mlproject
+  jwt: key.json
+  dataset: mnist
+  suffix: prod
